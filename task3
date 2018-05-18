@@ -1,0 +1,7 @@
+radius = 5
+k = 0
+for x in range(radius):
+    for y in range(radius):
+        for z in range(radius):
+            k = k + 1
+print(k)

@@ -1,0 +1,14 @@
+import math
+
+centre_x = 3
+centre_y = 2
+centre_z = 1
+radius = 2
+current_x, current_y, current_z = map(int, input().split())
+if (math.fabs(centre_x-current_x)<=radius and math.fabs(centre_y-current_y)<=radius and math.fabs(centre_z-current_z)<=radius):
+    if(current_z>=0):
+        print("Точка принадлежит области I")
+    else:
+        print("Точка принадлежит области II")
+else:
+    print("Точка не принадлежит области шара")
